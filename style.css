@@ -1,0 +1,212 @@
+/*===========================*/
+/*==== Incl Pad & Bord ======*/
+/*===========================*/
+*{
+    box-sizing: border-box;
+}
+
+/*===========================*/
+/*====== Formtatting ========*/
+/*===========================*/
+.verdana-gray {
+    font-family: Verdana;
+    color: #8d8d8d;
+}
+
+/*===========================*/
+/*======= Background ========*/
+/*===========================*/
+.bg-gray {
+    background-color: #8d8d8d;
+}
+.bg-light-gray {
+    background-color: #e5e5e5;
+}
+.bg-white {
+    background-color: white;
+}
+.rounded {
+    border-radius: 8px;
+}
+
+/*===========================*/
+/*======== Wrappers =========*/
+/*===========================*/
+#wrapper-main {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+    
+    margin: 0;
+    padding: 1%;
+}
+#wrapper-header {
+    height: 120px;
+    line-height: 120px;
+
+    font-size: 24pt;
+}
+#wrapper-content {
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+}
+#wrapper-footer {
+    display: flex;
+    flex-shrink: 0;
+}
+
+
+/*===========================*/
+/*======== Headers ==========*/
+/*===========================*/
+.header {
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+/*===========================*/
+/*========= Content =========*/
+/*===========================*/
+#content {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+}
+
+
+/*======= Left Pane =========*/
+#content-left-pane {
+    width: 15%;
+    padding: 10px;
+}
+#e-list {
+    overflow-wrap: anywhere;
+}
+.el-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow-wrap: anywhere;
+    margin: 10px 0;
+}
+.el-name {
+    border-bottom: 2px solid #8d8d8d;
+    width: -webkit-fill-available;
+}
+.el-delete {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+/*========== Main ===========*/
+#content-main {
+    width: 85%;
+    margin-left: 10px;
+}
+
+/*========== Form ===========*/
+#form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    vertical-align: middle;
+    padding: 10px;
+}
+#add-entry {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+#e-name {
+    font-family: Verdana;
+    font-size: 10pt;
+    color: #636363;
+}
+#add-entry-btn-wrapper {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 10px;
+}
+.form-btn {
+    height: 100%;
+    margin: 0 auto;
+    font-family: Verdana;
+    color: #8d8d8d;
+    text-align: center;
+    border: 2px solid #8d8d8d;
+    border-radius: 8px;
+}
+.form-btn:hover {
+    cursor: pointer;
+    background-color: #636363;
+}
+#make-bracket-btn-wrapper {
+    width: 20%;
+    max-width: 200px;
+}
+
+/*======== Bracket ==========*/
+#bracket {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    padding: 10px;
+}
+.be-row {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    height: 40px;
+}
+.be {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    border-bottom: 2px solid #8d8d8d;
+    padding: 10px;
+}
+.be-name {
+    width: -webkit-fill-available;
+    text-align: center;
+}
+.be-btn {
+    width: 20px;
+    height: 20px;
+}
+.be-btn:hover {
+    cursor: pointer;
+}
+.be-btn:hover > img {
+    background-color: lightgray;
+}
+.be-btn > img {
+    width: auto;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+/*===========================*/
+/*========= Footer ==========*/
+/*===========================*/
+#footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#link-wrapper {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 5px;
+    cursor: pointer;
+}
+#git-logo {
+    height: 20px;
+    width: auto;
+    vertical-align: middle;
+}
